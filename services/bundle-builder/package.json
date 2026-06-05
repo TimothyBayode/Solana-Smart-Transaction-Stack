@@ -1,0 +1,19 @@
+{
+  "name": "@stack/bundle-builder",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@stack/shared": "*",
+    "@solana/web3.js": "^1.95.0",
+    "jito-sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

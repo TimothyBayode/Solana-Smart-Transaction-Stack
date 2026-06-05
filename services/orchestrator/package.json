@@ -1,0 +1,33 @@
+{
+  "name": "@stack/orchestrator",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@stack/shared": "*",
+    "@stack/slot-observer": "*",
+    "@stack/leader-detector": "*",
+    "@stack/tip-engine": "*",
+    "@stack/ai-agent": "*",
+    "@stack/transaction-builder": "*",
+    "@stack/bundle-builder": "*",
+    "@stack/lifecycle-tracker": "*",
+    "@stack/failure-classifier": "*",
+    "@stack/recovery-engine": "*",
+    "@solana/web3.js": "^1.95.0",
+    "express": "^4.19.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "typescript": "^5.4.5",
+    "ts-node": "^10.9.2"
+  }
+}
