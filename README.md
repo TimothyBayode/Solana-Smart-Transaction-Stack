@@ -29,18 +29,18 @@ See `architecture.md` for detailed component and data flow diagrams.
 
 ### Prerequisites
 
-- Node.js 20+
-- npm 9+
+- Node.js 18+ (v26.3.0 recommended)
+- npm 10.8.1+
 - Firebase project with Firestore
 - OpenAI API key
-- Solana RPC endpoint
+- Solana RPC endpoint (e.g., https://api.mainnet-beta.solana.com)
 - Jito block engine URL (optional for mainnet)
 
 ### Installation
 
 ```bash
-git clone <repo>
-cd solana-smart-transaction-stack
+git clone https://github.com/TimothyBayode/Solana-Smart-Transaction-Stack
+cd Solana-Smart-Transaction-Stack
 npm install
 ```
 
