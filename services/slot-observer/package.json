@@ -10,8 +10,7 @@
   },
   "dependencies": {
     "@stack/shared": "*",
-    "@solana/web3.js": "^1.95.0",
-    "@triton-one/yellowstone-grpc": "^1.10.0"
+    "@solana/web3.js": "^1.95.0"
   },
   "devDependencies": {
     "typescript": "^5.4.5"

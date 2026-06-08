@@ -1,6 +1,5 @@
 import {
   Connection,
-  PublicKey,
   SlotInfo,
 } from '@solana/web3.js'
 import {
