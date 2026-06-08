@@ -9,13 +9,13 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@stack/shared": "*",
-    "@stack/ai-agent": "*",
-    "@stack/transaction-builder": "*",
-    "@stack/bundle-builder": "*",
-    "@stack/tip-engine": "*",
-    "@stack/failure-classifier": "*",
-    "@stack/lifecycle-tracker": "*",
+    "@stack/shared": "^1.0.0",
+    "@stack/ai-agent": "^1.0.0",
+    "@stack/transaction-builder": "^1.0.0",
+    "@stack/bundle-builder": "^1.0.0",
+    "@stack/tip-engine": "^1.0.0",
+    "@stack/failure-classifier": "^1.0.0",
+    "@stack/lifecycle-tracker": "^1.0.0",
     "@solana/web3.js": "^1.95.0"
   },
   "devDependencies": {

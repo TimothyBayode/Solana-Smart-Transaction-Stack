@@ -6,7 +6,7 @@ import {
   FailureType,
 } from '@stack/shared'
 
-interface FailureInput {
+export interface FailureInput {
   signature: string
   error: string
   slot: number

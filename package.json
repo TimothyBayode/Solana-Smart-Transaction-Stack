@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "workspaces": [
-    "services/*",
-    "dashboard"
+    "services/*"
   ],
   "scripts": {
     "dev": "npm run dev --workspace=services/orchestrator",

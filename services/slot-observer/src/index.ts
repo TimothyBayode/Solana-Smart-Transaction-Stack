@@ -1,5 +1,7 @@
 import { SlotObserver } from './slot-observer'
 
+export { SlotObserver }
+
 const observer = new SlotObserver()
 
 async function main(): Promise<void> {

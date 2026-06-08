@@ -1,16 +1,13 @@
-import {
-  FailureClassifier,
-  FailureType,
-  FailureRecord,
-} from '@stack/failure-classifier'
-import { AIAgent, getAgentDecision } from '@stack/ai-agent'
+import { FailureClassifier } from '@stack/failure-classifier'
+import { AIAgent } from '@stack/ai-agent'
 import { TransactionBuilder } from '@stack/transaction-builder'
 import { BundleBuilder } from '@stack/bundle-builder'
 import { TipEngine } from '@stack/tip-engine'
 import { LifecycleTracker } from '@stack/lifecycle-tracker'
 import {
   AgentContext,
-  FailureRecord as FailureRecordType,
+  AgentDecision,
+  FailureType,
   logger,
   getFirestore,
   FailureRepository,
@@ -101,7 +98,7 @@ export class RecoveryEngine {
 
   private async recoverBlockhashExpired(
     signature: string,
-    decision: import('@stack/shared').AgentDecision,
+    decision: AgentDecision,
   ): Promise<string> {
     logger.info('Recovering from BLOCKHASH_EXPIRED', {
       signature,
@@ -113,7 +110,7 @@ export class RecoveryEngine {
 
   private async recoverComputeExceeded(
     signature: string,
-    decision: import('@stack/shared').AgentDecision,
+    decision: AgentDecision,
   ): Promise<string> {
     logger.info('Recovering from COMPUTE_EXCEEDED', {
       signature,
@@ -124,7 +121,7 @@ export class RecoveryEngine {
 
   private async recoverFeeTooLow(
     signature: string,
-    decision: import('@stack/shared').AgentDecision,
+    decision: AgentDecision,
   ): Promise<string> {
     logger.info('Recovering from FEE_TOO_LOW', {
       signature,
@@ -136,7 +133,7 @@ export class RecoveryEngine {
 
   private async recoverBundleFailed(
     signature: string,
-    decision: import('@stack/shared').AgentDecision,
+    decision: AgentDecision,
   ): Promise<string> {
     logger.info('Recovering from BUNDLE_FAILED', {
       signature,

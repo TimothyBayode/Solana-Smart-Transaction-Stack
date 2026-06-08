@@ -9,7 +9,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@stack/shared": "*",
+    "@stack/shared": "^1.0.0",
     "@solana/web3.js": "^1.95.0"
   },
   "devDependencies": {

@@ -1,3 +1,3 @@
-import { TransactionBuilder } from './transaction-builder'
+import { TransactionBuilder, BuildTransactionParams } from './transaction-builder'
 
 export { TransactionBuilder, BuildTransactionParams }

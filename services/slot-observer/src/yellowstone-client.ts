@@ -19,7 +19,7 @@ export class YellowstoneClient {
     this.isConnected = true
   }
 
-  async subscribeSlots(onSlot: (update: SlotUpdate) => void): Promise<void> {
+  async subscribeSlots(_onSlot: (update: SlotUpdate) => void): Promise<void> {
     if (!this.isConnected) {
       logger.warn('No gRPC client, falling back to RPC slot subscription')
       return

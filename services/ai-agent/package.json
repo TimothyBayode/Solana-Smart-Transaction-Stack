@@ -9,7 +9,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@stack/shared": "*",
+    "@stack/shared": "^1.0.0",
     "openai": "^4.52.0"
   },
   "devDependencies": {

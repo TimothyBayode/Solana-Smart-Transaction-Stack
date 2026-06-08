@@ -1,3 +1,3 @@
-import { FailureClassifier } from './failure-classifier'
+import { FailureClassifier, FailureInput } from './failure-classifier'
 
 export { FailureClassifier, FailureInput }

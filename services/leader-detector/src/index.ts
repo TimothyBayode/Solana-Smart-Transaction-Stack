@@ -1,5 +1,7 @@
 import { LeaderDetector } from './leader-detector'
 
+export { LeaderDetector }
+
 const detector = new LeaderDetector()
 
 export async function getCurrentLeader() {
